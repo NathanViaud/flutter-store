@@ -1,16 +1,19 @@
 # store
 
-A new Flutter project.
+## Questions
 
-## Getting Started
+### Pourquoi utiliser un factory constructor ?
 
-This project is a starting point for a Flutter application.
+Un factory constructor permet de retourner une instance d'une classe à partir d'une autre source (souvent utilisé pour la désérialisation)
 
-A few resources to get you started if this is your first Flutter project:
+### Pourquoi utiliser notifyListener?
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Pour notifier les vues qu'un changement a eu lieu dans le modèle
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Que se passe-t-il si on oublie notifyListeners()?
+
+La vue ne sera pas mise à jour
+
+### Quelle est la responsabilité du ViewModel dans MVVM?
+
+Le ViewModel est le pont entre le modèle et la vue
